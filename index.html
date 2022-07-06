@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BMI</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <main><h1>BMI RECHNER</h1>
+      <h3>Der Body-Mass-Index, kurz BMI, ist die gebräuchlichste Formel zur Gewichtsberechnung. Er ergibt sich aus dem Verhältnis des Körpergewichts in Kilogramm und der Körpergröße in Metern zum Quadrat.</h3>
+
+      <form action="javascript:run()">
+
+            <label for="gewicht"><i class="fa-solid fa-weight-scale"></i>Gewicht (Kg)</label>
+            <input type="number" id="gewicht" min="0" required> 
+
+            <label for="hohe"><i class="fa-solid fa-ruler"></i>Höhe (cm)</label>
+            <input type="number" id="hohe" min="0" required> 
+
+            <button type="submit">Rechne</button>
+            <p id="bmi"></p>
+      </form>
+
+      <table><caption><strong>BMI-Tabelle für Frauen</strong></caption>
+<thead>
+<tr><th scope="col">Alter</th><th scope="col">Normalbereich des BMI</th><th scope="col">Idealer BMI</th></tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">19 - 24</td>
+<td style="text-align: center;">17,5 - 23,9</td>
+<td style="text-align: center;">20,75</td>
+</tr>
+<tr>
+<td style="text-align: center;">25 - 34</td>
+<td style="text-align: center;">18,5 - 24,9</td>
+<td style="text-align: center;">21,75</td>
+</tr>
+<tr>
+<td style="text-align: center;">35 - 44</td>
+<td style="text-align: center;">19,5 - 25,9</td>
+<td style="text-align: center;">22,75</td>
+</tr>
+<tr>
+<td style="text-align: center;">45 - 54</td>
+<td style="text-align: center;">20,5 - 26,9</td>
+<td style="text-align: center;">23,75</td>
+</tr>
+<tr>
+<td style="text-align: center;">55 - 64</td>
+<td style="text-align: center;">21,5 - 27,9</td>
+<td style="text-align: center;">24,75</td>
+</tr>
+<tr>
+<td style="text-align: center;">&nbsp;&gt;= 65</td>
+<td style="text-align: center;">22,5 - 28,9</td>
+<td style="text-align: center;">25,75</td>
+</tr>
+</tbody></table>
+<br>
+<table><caption><strong>BMI-Tabelle für Männer</strong></caption>
+      <thead>
+      <tr><th scope="col">Alter</th><th scope="col">Normalbereich des BMI</th><th scope="col">Idealer BMI</th></tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td style="text-align: center;">19 - 24</td>
+      <td style="text-align: center;">18,5 - 24,9</td>
+      <td style="text-align: center;">21,75</td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">25 - 34</td>
+      <td style="text-align: center;">19,5 - 25,9</td>
+      <td style="text-align: center;">22,75</td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">35 - 44</td>
+      <td style="text-align: center;">20,5 - 26,9</td>
+      <td style="text-align: center;">23,75</td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">45 - 54</td>
+      <td style="text-align: center;">21,5 - 27,9</td>
+      <td style="text-align: center;">24,75</td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">55 - 64</td>
+      <td style="text-align: center;">22,5 - 28,9</td>
+      <td style="text-align: center;">25,75</td>
+      </tr>
+      <tr>
+      <td style="text-align: center;">&nbsp;&gt;= 65</td>
+      <td style="text-align: center;">23,5 - 29,9</td>
+      <td style="text-align: center;">26,75</td>
+      </tr>
+      </tbody>
+      </table>
+
+</main>
+
+
+      <script src="index.js"></script>
+</body>
+</html>
